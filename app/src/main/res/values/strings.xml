@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Box Game</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_enter_number_of_box">Please enter no of box</string>
+    <string name="error_enter_number_of_box_min_value">Please enter box size range between 5–25</string>
+</resources>
