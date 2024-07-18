@@ -22,6 +22,15 @@ class CallReceiver : BroadcastReceiver() {
                     showCallerInfo(context, incomingNumber)
                 }
             }
+            if (state == TelephonyManager.EXTRA_STATE_IDLE) {
+                val incomingNumber = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)
+                Log.d("CallReceiver", "Incoming call from: $incomingNumber")
+                showCallerInfo(context, "incomingNumber")
+
+                if (incomingNumber != null) {
+                    showCallerInfo(context, incomingNumber)
+                }
+            }
         }
     }
 
